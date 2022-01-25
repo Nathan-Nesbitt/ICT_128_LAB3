@@ -3,7 +3,7 @@ on: push
 
 jobs:
   pester-test:
-    name: Lab 2 Tests
+    name: Lab 3 Tests
     runs-on: windows-2019
     steps:
       - name: Check out repo        
@@ -11,4 +11,4 @@ jobs:
       - run: Install-Module Pester -Force
       - run: Import-Module Pester -PassThru
       - run: |
-          ./ICT_128_LAB_2.Tests.ps1
+          ./ICT_128_LAB_3.Tests.ps1
